@@ -1,0 +1,38 @@
+{
+  "name": "ssbify",
+  "version": "1.0.0",
+  "description": "turns webpages into ssb-markdown",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ssb"
+  ],
+  "bin": "bin.js",
+  "author": "Kristoffer Ström <kristoffer@rymdkoloni.se>",
+  "license": "MIT",
+  "scripts": {
+    "test": "ln -s .. node_modules/exoform ; node test/test.js",
+    "lint": "standard"
+  },
+  "pre-commit": [
+    "lint",
+    "test"
+  ],
+  "devDependencies": {
+    "pre-commit": "^1.1.2",
+    "standard": "^5.4.1"
+  },
+  "dependencies": {
+    "async": "^1.5.2",
+    "cheerio": "^0.19.0",
+    "crypto": "0.0.3",
+    "node-readability": "^2.1.0",
+    "pull-stream": "^3.1.0",
+    "request": "^2.67.0",
+    "ssb-client": "^3.0.0",
+    "striptags": "^2.1.1",
+    "to-markdown": "^2.0.1"
+  }
+}
